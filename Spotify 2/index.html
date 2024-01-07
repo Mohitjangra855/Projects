@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Kenia&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="assets/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse prodcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+
+                    <img src="assets/backward_icon.png" alt="">
+                    <img src="assets/forward_icon.png" class="hide" alt="">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge hide">Explore Premium</button>
+                    <button class="badge dark-badge"><i class="fa-regular fa-circle-down"></i> Install App</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="image">
+                    <p class="card-title">Sidhu Moose Wala</p>
+                    <p class="card-info">No.1 Artist in the world</p>
+                </div>
+            </div>
+            <h2>Tranding now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="moosetape.jpeg" alt="image">
+                    <p class="card-title">Moosetape</p>
+                    <p class="card-info">Sidhu Moose Wala</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/card2img.jpeg" alt="image">
+                    <p class="card-title">Moosetape</p>
+                    <p class="card-info">Sidhu Moose Wala</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="assets/card3img.jpeg" alt="image">
+                    <p class="card-title">Moosetape</p>
+                    <p class="card-info">Sidhu Moose Wala</p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/card4img.jpeg" alt="image">
+                    <p class="card-title">Moosetape</p>
+                    <p class="card-info">Sidhu Moose Wala</p>
+                </div>
+            </div>
+            <h2>Featured charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/card5img.jpeg" alt="image">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+          
+                <div class="card">
+                    <img src="assets/card6img.jpeg" alt="image">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+          
+                <div class="card">
+                    <img src="assets/card1img.jpeg" alt="image">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="Level.jpeg" alt="Level" class="song-img">
+                <div><h4>Level</h4>
+                <h6>Sidhu Moose Wala</h6>
+                </div>
+                <img src="Homework Assets/album_icon1.png" alt="Like">
+                <img src="Homework Assets/album_icon2.png" alt="Cast">
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="assets/player_icon1.png" class="player-control-icon" alt="">
+                    <img src="assets/player_icon2.png" class="player-control-icon" alt="">
+                    <img src="assets/player_icon3.png" class="player-control-icon" alt="" style="opacity: 1; height: 2rem;">
+                    <img src="assets/player_icon4.png" class="player-control-icon" alt="">
+                    <img src="assets/player_icon5.png" class="player-control-icon" alt="">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="total-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="Homework Assets/controls_icon1.png" alt="controls">
+                <img src="Homework Assets/controld_icon2.png" alt="controls">
+                <img src="Homework Assets/controls_icon3.png" alt="controls">
+                <img src="Homework Assets/controls_icon4.png" alt="controls">
+                <img src="Homework Assets/controls_icon5.png" alt="controls">
+                <input type="range" min="0" max="100" step="1">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

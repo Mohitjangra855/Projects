@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(33, 125, 206);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: rgb(23, 4, 77);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+form input {
+    background: transparent;
+    font-size: 25px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-style: none;
+    box-shadow: 2px 6px 3px rgb(0, 0, 0);
+    border: 1px solid black;
+    color: rgb(99, 231, 248);
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+form div button{
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-style: none;
+    box-shadow: 2px 6px 3px rgb(0, 0, 0);
+    border: 1px solid black;
+    color: rgb(99, 231, 248);
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+form div button:hover{
+    box-shadow: inset 2px 6px 3px 5px rgb(0, 0, 0);  
+}
+
+form input:hover {
+    box-shadow: inset 2px 3px 3px 5px black;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+  
+    margin: 20px 0px;
+
+
+}
+
+form .display input {
+    text-align: right;
+flex: 1;
+
+    font-size: 50px;
+    box-shadow: none;
+    border: 1px solid black;
+    background-color: rgb(0, 110, 255);
+    border-radius: 10px;
+    color: black;
+
+}
+
+
+form .equal {
+    width: 250px;
+    color: rgb(255, 255, 255);
+    background-color: green;
+
+}
+
+form .equal:hover {
+    box-shadow: inset 2px 3px 3px 5px black;
+
+
+
+}
+form .sin {
+
+    color: yellow;
+
+
+}
+
+form .sin:hover {
+    box-shadow: inset 2px 3px 3px 5px black;
+
+
+
+}
+
+form .mohit {
+
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+form .mohit:hover {
+    box-shadow: inset 2px 3px 3px 5px black;
+}
+
+form .del {
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+form .del:hover {
+    box-shadow: inset 2px 3px 3px 5px black;
+}
