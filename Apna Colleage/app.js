@@ -1,3 +1,17 @@
+// nav =====
+
+let nav=document.querySelector("nav");
+let menu=document.querySelector(".menu");
+menu.addEventListener("click",()=>{
+    nav.classList.toggle("active");
+})
+
+
+
+
+
+
+
 // changing batch name ===
 const dynamicText=document.querySelector(".auto-generate");
 const words=["Alpha - DSA","Delta - Web Development","Sigma - DSA & Web Development"];
